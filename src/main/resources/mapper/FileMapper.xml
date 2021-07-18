@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hss.inspiration.mapper.FileMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hss.inspiration.pojo.File">
+        <id column="fileId" property="fileId" />
+        <result column="fileName" property="fileName" />
+        <result column="createTime" property="createTime" />
+        <result column="createBy" property="createBy" />
+        <result column="updateTime" property="updateTime" />
+        <result column="updateBy" property="updateBy" />
+        <result column="fileUrl" property="fileUrl" />
+        <result column="remarks" property="remarks" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        fileId, fileName, createTime, createBy, updateTime, updateBy, fileUrl, remarks
+    </sql>
+
+</mapper>

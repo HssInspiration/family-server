@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hss.inspiration.mapper.OperationLogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hss.inspiration.pojo.OperationLog">
+        <id column="logId" property="logId" />
+        <result column="operationType" property="operationType" />
+        <result column="createTime" property="createTime" />
+        <result column="createBy" property="createBy" />
+        <result column="updateTime" property="updateTime" />
+        <result column="updateBy" property="updateBy" />
+        <result column="operationContent" property="operationContent" />
+        <result column="remarks" property="remarks" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        logId, operationType, createTime, createBy, updateTime, updateBy, operationContent, remarks
+    </sql>
+
+</mapper>

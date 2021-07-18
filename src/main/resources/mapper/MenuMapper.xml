@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hss.inspiration.mapper.MenuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hss.inspiration.pojo.Menu">
+        <id column="menuId" property="menuId" />
+        <result column="menuName" property="menuName" />
+        <result column="createTime" property="createTime" />
+        <result column="createBy" property="createBy" />
+        <result column="updateTime" property="updateTime" />
+        <result column="updateBy" property="updateBy" />
+        <result column="parentMenuId" property="parentMenuId" />
+        <result column="menuUrl" property="menuUrl" />
+        <result column="remarks" property="remarks" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        menuId, menuName, createTime, createBy, updateTime, updateBy, parentMenuId, menuUrl, remarks
+    </sql>
+
+</mapper>
