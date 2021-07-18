@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan("com.hss.inspiration.mapper")
-public class InspirationApplication {
+public class FamilyApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(InspirationApplication.class, args);
+        SpringApplication.run(FamilyApplication.class, args);
     }
 
 }
